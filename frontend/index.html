@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+</head>
+<body>
+    <h1>Lista de estudiantes</h1>
+    <form name="estudianteForm">
+        <div>
+            <input type="text" name="nombre" placeholder="Nombre del estudiante">
+        </div>
+        <div>
+            <input type="text" name="codigo" placeholder="Codigo del estudiante">
+        </div>
+        <div>
+            <input type="text" name="email" placeholder="Email del contacto">
+        </div>
+        <button type="submit">Guardar</button>
+    </form>
+    <br>
+    <table id="estudiantes">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Codigo</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="js/estudiantes.js"></script>
+</body>
+</html>
