@@ -13,10 +13,10 @@ Content-Type: 'application/json'
 
 
 ### Consultar un Estudiantes
-GET http://127.0.0.1:8000/api/appEstudiante/estudiante/100
+GET http://127.0.0.1:8000/api/appEstudiante/estudiante/1234
 
 ### Actualizar a un Estudiantes
-PUT http://127.0.0.1:8000/api/appEstudiante/estudiante/100
+PUT http://127.0.0.1:8000/api/appEstudiante/estudiante/500
 Content-Type: "application/json"
 
 {
