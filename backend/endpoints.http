@@ -1,0 +1,29 @@
+### Consultar todos los contactos
+GET http://127.0.0.1:8000/api/app/estudiantes
+
+### Crear un contacto
+POST http://127.0.0.1:8000/api/app/estudiante
+Content-Type: 'application/json'
+
+{
+    "nombre": "Juanita",
+    "email": "juanita@test.com",
+    "telefono": "321111"
+}
+
+
+### Consultar un contacto por id
+GET http://127.0.0.1:8000/api/app/estudiante/8
+
+### Actualizar un contacto
+PUT http://127.0.0.1:8000/api/app/estudiante/8
+Content-Type: "application/json"
+
+{
+    "nombre": "Pepito",
+    "email": "pepito@test.com",
+    "telefono": "321111"
+}
+
+### Eliminar contacto
+DELETE http://127.0.0.1:8000/api/app/estudiante/8
