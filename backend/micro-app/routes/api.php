@@ -19,16 +19,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-Route::prefix("app")->group(function(){
+Route::prefix("appEstudiante")->group(function(){
     Route::controller(EstudianteController::class)->group(function(){
-        Route::get("Estudiantes", "index");
-        Route::get("Estudiante/{id}", "show");
-        Route::post("Estudiante", "store");
-        Route::put("Estudiante/{id}", "update");
-        Route::delete("Estudiante/{id}", "destroy");
+        Route::get("estudiantes", "index");
+        Route::get("estudiante/{id}", "show");
+        Route::post("estudiante", "store");
+        Route::put("estudiante/{id}", "update");
+        Route::delete("estudiante/{id}", "destroy");
     });
 });
