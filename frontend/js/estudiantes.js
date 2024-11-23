@@ -1,7 +1,7 @@
 const ESTUDIANTE_ENDPOINT = "http://127.0.0.1:8000/api/appEstudiante";
 const NOTA_ENDPOINT = "http://127.0.0.1:8000/api/appNota";
 const table = document.getElementById("estudiantes");
-const est = document.getElementById("estadisticas");
+const est = document.getElementById("intt");
 const estTitulo = document.getElementById("estTitulo");
 
 let aprobados = 0;
@@ -49,7 +49,7 @@ const getEstado = (notaDef) => {
 };
 
 const mostrarEst = () => {
-  estTitulo.textContent = "Resumen del listado"; 
+  estTitulo.textContent = "CONSOLIDADO DE ESTUDIANTES"; 
   const apP = document.createElement("p");
   const nApP = document.createElement("p");
   const sinNP= document.createElement("p");
@@ -76,7 +76,7 @@ const leerEstudiantes = async () => {
     const estudiantes = body.data;
     const tbody = table.getElementsByTagName("tbody")[0];
     tbody.innerHTML = "";
-    estTitulo.textContent = "Cargando listado de estudiantes...";
+    estTitulo.textContent = "CARGANDO CONSOLIDADO";
 
     for (const estudiante of estudiantes) {
       const tr = document.createElement("tr");

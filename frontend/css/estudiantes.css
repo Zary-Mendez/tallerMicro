@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5b0e7 ;
+}
+
+header {
+    margin: 0;
+    padding: 10px 50px;
+    background-color: #f99dfc;
+    color: #fff;
+    font-size: 18px;
+}
+
+body h1 {
+    
+        background-color: #f050d5;
+        color: #ffffff;
+        grid-area: h;
+        width: 100vw;
+        height: 4vh;
+        text-align: center;
+        padding: 20px 0px;
+        border-radius: 35px;
+    
+    
+}
+
+
+table {
+    width: 80%;
+    margin: auto;
+    border-radius: 35px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px #f052f033;
+}
+
+thead th {
+    background-color: #f050d5;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td, th {
+    padding: 12px;
+    text-align: center;
+    border-radius: 35px;
+    border-bottom: 1px solid #f3b5f5;
+}
+
+tbody tr {
+    background-color: #ffffff;
+    border-radius: 35px;
+}
+tbody tr:nth-child(even) {
+    background-color: #facdfa;
+    border-radius: 35px;
+}
+
+table button {
+    width: 100%;
+    background-color: #e273d9;
+    color: white;
+    padding: 10px 0;
+    margin:5px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 35px;
+}
+button {
+    width: 100px;
+    height: 50px;
+    background-color: #f840e9;
+    animation-name: example;
+    animation-duration: 10s;
+    border-radius: 35px;
+  }
+@keyframes example {
+    from {background-color:   #c683f3 ;}
+    to {background-color:#f840e9;}
+    
+  }
+button {
+    padding: 10px 20px;
+    background-color: #e57bd2;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 200px;
+    text-align: center;
+    border-radius: 35px;
+}
+#intt {
+    margin: auto;
+    max-width: 600px;
+    
+    background-color: #f050d5;
+    color: #ffffff;
+    
+ 
+    border-radius: 35px;
+    display: grid;
+    grid-template-columns: 170px 190px 240px;
+    grid-template-areas: 
+    "h h h"
+    "est1 est2 est3";
+
+    p {
+        font-size: 16px;
+        text-align: center;
+        
+    }
+}
+
+#estTitulo {
+    grid-area: h;
+    text-align: center;
+    border-radius: 35px;
+}
+
+#aprobados {
+    grid-area: est1;
+}
+
+#noAprobados {
+    grid-area: est2;
+}
+
+#sinNotas {
+    grid-area: est3;
+}
